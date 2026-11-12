@@ -1,16 +1,32 @@
-# React + Vite
+# ⚡ ASSA Digital Shop - E-Commerce Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, modular, and responsive e-commerce front-end web application built using **React.js**, **Vite**, and **Bootstrap 5**. Designed with a component-driven architecture and real-time interactive cart management.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Built With & Technology Stack
 
-## React Compiler
+* **React.js** (Functional Components, `useState` Hook, Props & State Lifting)
+* **Vite** (Next-generation lightning-fast frontend build tool)
+* **Bootstrap 5** (Responsive layout, Flexbox, UI Card components & Utilities)
+* **React Icons** (Scalable vector icons via `react-icons`)
+* **Git & GitHub** (Version control and remote repository deployment)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📁 Project Architecture (Folder Structure)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── assets/             # Media assets (images, banners, logos)
+├── components/         # Modular UI building blocks
+│   ├── Navbar.jsx      # Navigation header & dynamic cart badge counter
+│   ├── Hero.jsx        # Promotional header banner & Call-to-Action
+│   ├── ProductCard.jsx # Reusable individual product card component
+│   ├── ProductGrid.jsx # Product container mapping list data dynamically
+│   └── Footer.jsx      # Footer with copyright and system info
+├── data/
+│   └── products.js     # Mock database / API payload for product items
+├── App.jsx             # Main application entry & global state coordinator
+├── index.css           # Central styling hub (Bootstrap & custom overrides)
+└── main.jsx            # React root DOM renderer
